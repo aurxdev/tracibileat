@@ -1,0 +1,25 @@
+<div class="scanner-container">
+  <h1>Scanner un produit</h1>
+    <div class="scanner-menu">
+      <button>Utiliser la caméra</button>
+      <button>Utiliser une image</button>
+    </div>
+  
+    <div class="scanner-area">
+      <zxing-scanner (scanSuccess)="handleScan($event)"
+      [formats]="allowedFormats"></zxing-scanner>
+      <div class="scanner-overlay">
+        <div class="corner top-left"></div>
+        <div class="corner top-right"></div>
+        <div class="corner bottom-left"></div>
+        <div class="corner bottom-right"></div>
+      </div>
+    </div>
+  
+    <p class="instruction-text">Aligner le code-barre au milieu du cadre.</p>
+    <p class="instruction-text" *ngIf="scannedResult">{{ error }}</p>
+    <div class="text-center" *ngIf="isScanned">
+      <div class="spinner-border text-success" role="status">
+      </div>
+    </div>
+</div>  

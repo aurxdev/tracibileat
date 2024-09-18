@@ -1,0 +1,18 @@
+<div class="container">
+  <h4 *ngIf="history.length === 0">Aucun scan effectué.</h4>
+  <ul>
+    <li *ngFor="let scan of history">
+      <ng-container *ngIf="scan === '3017620422003'; else checkJordan">
+        <a [routerLink]="['/produit1']">Nutella</a>
+      </ng-container>
+      <ng-template #checkJordan>
+        <ng-container *ngIf="scan === '5010477348395'; else defaultScan">
+          <a [routerLink]="['/produit2']">Jordan : céréales</a>
+        </ng-container>
+      </ng-template>
+      <ng-template #defaultScan>
+        <a>{{ scan }}</a>
+      </ng-template>
+    </li>
+  </ul>
+</div>
