@@ -226,4 +226,36 @@
     width: 80%;
     
     }
+
+    .worldMap{
+        position: relative;
+        left:20%;
+    }
     
+    @media (max-width: 992px) {
+        .worldMap{left: 0;}
+
+        .products{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .item{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .bubble{
+            width: 100%;
+        }
+
+        .bubble img{
+            width: 100%;
+        }
+
+    }

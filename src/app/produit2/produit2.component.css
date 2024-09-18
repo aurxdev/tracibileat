@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #D4EDDA;
+    background-color: #A8E4A0;
     text-align: center;
     }
     /* Conteneur principal */
@@ -19,7 +19,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #D4EDDA;
+    background-color: #A8E4A0;
     }
     /* Image du produit (Nutella) */
     .product img {
@@ -78,6 +78,16 @@
     border-radius: 8px;
     }
     
+    h1{
+        text-align: center;
+    }
+
+    hr{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: #467477;
+    }
     
     
     /* Conteneur des sections Origines et Production */
@@ -200,7 +210,7 @@
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color:#D4EDDA;
+    background-color:#D4EDDA;;
     border-radius: 10px;
     
     margin-top: 30px;
@@ -216,6 +226,36 @@
     width: 80%;
     
     }
-    h1{
-        text-align: center;
+
+    .worldMap{
+        position: relative;
+        left:20%;
+    }
+    
+    @media (max-width: 992px) {
+        .worldMap{left: 0;}
+
+        .products{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .item{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .bubble{
+            width: 100%;
+        }
+
+        .bubble img{
+            width: 100%;
+        }
+
     }

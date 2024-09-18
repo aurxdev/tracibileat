@@ -17,9 +17,10 @@
     </div>
   
     <p class="instruction-text">Aligner le code-barre au milieu du cadre.</p>
-    <p class="instruction-text" *ngIf="scannedResult">{{ error }}</p>
-    <div class="text-center" *ngIf="isScanned">
-      <div class="spinner-border text-success" role="status">
+    <div class="error-div" *ngIf="scannedResult"><p>{{ error }}</p>
+      <div class="text-center" *ngIf="isScanned">
+        <div class="spinner-border text-success" role="status">
+        </div>
       </div>
     </div>
 </div>  
