@@ -10,5 +10,5 @@ import { BarcodeScannerComponent } from './barcode-scanner/barcode-scanner.compo
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tracibilitair';
+  title = 'tracabilitair';
 }
